@@ -1,7 +1,14 @@
 console.log('sanity check')
 
-const inputEl = document.getElementById('typeBox')
-const buttonEl = document.getElementById('submit-button')
+const inp = document.getElementById('typeBox')
+const btn = document.getElementById('submit-button')
 const listEl = document.getElementById('todo-list')
 
 // console.log(inputEl, buttonEl, listEl)
+
+btn.addEventListener('click', function() {
+    const li = document.createElement('li')
+    li.textContent = inp.value
+    listEl.appendChild(li)
+    inp.value = ''
+})
