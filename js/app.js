@@ -8,9 +8,9 @@ const listEl = document.getElementById('todo-list')
 
 btn.addEventListener('click', function() {
     if (inp.value !== '') {
-    const li = document.createElement('li')
-    li.textContent = inp.value
-    listEl.appendChild(li)
-    inp.value = ''
+        const li = document.createElement('li')
+        li.textContent = inp.value
+        listEl.appendChild(li)
+        inp.value = ''
     }
 })
